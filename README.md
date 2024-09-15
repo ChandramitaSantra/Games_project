@@ -67,3 +67,94 @@ The API is documented using Swagger. You can access the Swagger UI at the follow
   "author": "string",
   "publishedDate": "string (date)"
 }
+
+# Game Management API
+
+## API Endpoints
+
+### 1. Create a Single Game
+
+- **URL:** `/api/games`
+- **Method:** `POST`
+- **Request Body:**
+
+    ```json
+    {
+      "name": "string",
+      "url": "string",
+      "author": "string",
+      "publishedDate": "YYYY-MM-DD"
+    }
+    ```
+- **Response:** `201 Created`
+
+### 2. Get All Games
+
+- **URL:** `/api/games`
+- **Method:** `GET`
+- **Response:**
+
+    ```json
+    [
+      {
+        "id": "603eeb4b5e39fb00171adf6c",
+        "name": "The Legend of Zelda",
+        "url": "https://example.com/zelda",
+        "author": "Nintendo",
+        "publishedDate": "1986-02-21"
+      }
+    ]
+    ```
+
+### 3. Get a Single Game by ID
+
+- **URL:** `/api/games/{id}`
+- **Method:** `GET`
+- **Response:** `200 OK`
+
+### 4. Update a Game by ID
+
+- **URL:** `/api/games/{id}`
+- **Method:** `PUT`
+- **Request Body:**
+
+    ```json
+    {
+      "name": "string",
+      "url": "string",
+      "author": "string",
+      "publishedDate": "YYYY-MM-DD"
+    }
+    ```
+- **Response:** `200 OK`
+
+### 5. Delete a Game by ID
+
+- **URL:** `/api/games/{id}`
+- **Method:** `DELETE`
+- **Response:** `200 OK`
+
+## Frontend Setup
+
+### Installation
+
+1. Navigate to the frontend folder:
+
+    ```bash
+    cd ../frontend
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Start the frontend:
+
+    ```bash
+    npm start
+    ```
+
+The frontend will run on [http://localhost:3000](http://localhost:3000)
+
