@@ -23,8 +23,8 @@ This project provides a backend service for managing games. It allows users to p
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/ChandramitaSantra/CRUD.git
-    cd CRUD
+    https://github.com/ChandramitaSantra/Games_project.git
+    cd Games_project
     cd backend
     ```
 
