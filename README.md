@@ -67,7 +67,8 @@ The API is documented using Swagger. You can access the Swagger UI at the follow
   "author": "string",
   "publishedDate": "string (date)"
 }
-## Available Endpoints
+```
+
 
 # Game Management API
 
@@ -79,13 +80,14 @@ The API is documented using Swagger. You can access the Swagger UI at the follow
 - *Method:* POST
 - *Request Body:*
 
-    json
+   ``` json
     {
       "name": "string",
       "url": "string",
       "author": "string",
       "publishedDate": "YYYY-MM-DD"
     }
+   ```
     
 - *Response:* 201 Created
 
@@ -95,7 +97,7 @@ The API is documented using Swagger. You can access the Swagger UI at the follow
 - *Method:* GET
 - *Response:*
 
-    json
+   ``` json
     [
       {
         "id": "603eeb4b5e39fb00171adf6c",
@@ -105,6 +107,7 @@ The API is documented using Swagger. You can access the Swagger UI at the follow
         "publishedDate": "1986-02-21"
       }
     ]
+   ```
     
 
 ### 3. Get a Single Game by ID
@@ -119,15 +122,16 @@ The API is documented using Swagger. You can access the Swagger UI at the follow
 - *Method:* PUT
 - *Request Body:*
 
-    json
+ ```json
     {
       "name": "string",
       "url": "string",
       "author": "string",
       "publishedDate": "YYYY-MM-DD"
     }
+```
     
-- *Response:* 200 OK
+*Response:* 200 OK
 
 ### 5. Delete a Game by ID
 
@@ -141,20 +145,23 @@ The API is documented using Swagger. You can access the Swagger UI at the follow
 
 1. Navigate to the frontend folder:
 
-    bash
+   ``` bash
     cd ../frontend
+   ```
     
 
 2. Install dependencies:
 
-    bash
+   ``` bash
     npm install
+   ```
     
 
 3. Start the frontend:
 
-    bash
+    ```bash
     npm start
+    ```
     
 
 The frontend will run on [http://localhost:3000](http://localhost:3000)
